@@ -10,6 +10,7 @@ script:
   - docker run -e CI=true surflineshea/docker-react npm run test -- --coverage
 
 deploy:
+  edge: true
   provider: elasticbeanstalk
   region: "us-east-1"
   app: "docker-react"
